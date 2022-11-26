@@ -1,9 +1,12 @@
+import Button from "../components/button";
 import Input from "../components/input";
 import Layout from "../components/layout";
 
 // TODO: make a form component which will handle the inputs 
 // think about state management
 // should have some mobile friendly styling 
+
+const handleClick = () => console.log("Clicked me")
 
 const Index = () => (
   <Layout>
@@ -15,6 +18,7 @@ const Index = () => (
     <section className="section">
       <Input type="number" label="Percentage" placeholder="Bakers percentage" />
     </section>
+    <Button label="Add Field" onClick={handleClick}/>
   </Layout>
 );
 
